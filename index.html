@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="porownanie, wielkosc, ekran, monitor, sprawdz, display, screen, comparison, size, tv" />
+    <meta name="description" content="Nie wiesz jaki rozmiar monitora wybrać? Ta strona pomoże Ci w wyborze, pokazując Ci różnice między nimi.">
+    <meta name="author" content="Grzegorz Musialik">
+    <title>Porównanie wielkości monitorów!</title>
+    
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Jomhuria|Open+Sans|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/jquery-scrollto.js"></script>
+    <script src="js/add_html5.js"></script>
+    <script src="js/draw_screen.js"></script>
+    
+    
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head>
+
+<body>
+    
+    <section id="top-bar">
+        <i class="icon-desktop"></i>Porównaj wielkość monitorów!<i class="icon-desktop"></i>
+    </section>
+    
+    <section id="description">
+        <h3 class="center">Witaj na stronie <span class="bold">porownaj-monitory.pl</span></h3>
+        <p>Witryna ta pomoże Ci w doborze odpowiedniej wielkości monitora lub TV. Wybierz format, podaj wielkość oraz kliknij "PORÓWNAJ" - i już! Możesz porównać ze sobą dwie różne wielkości monitorów!</p>
+        Zaczynajmy!
+        <h6>Tagi: monitory, wielkość, porównanie, screen, comparison</h6>
+    </section>
+    
+    <section>
+        <div class="form_screen">
+            Monitor #1<br/>
+            <form name="screen_1">
+                Wybierz proporcje:<br/>
+                
+                <input type="radio" name="format_1" class="checkbox" id="x16_9">
+                <label class="etykieta_checkbox" for="x16_9" id="img_16_9"><img src="img/16x9.png" class="img_checkbox" alt="monitor_16:9"></label>
+                
+                <input type="radio" name="format_1" class="checkbox" id="x4_3">
+                <label class="etykieta_checkbox" for="x4_3" id="img_4_3"><img src="img/4x3.png" class="img_checkbox" alt="monitor_4:3"></label>
+                
+                <input type="radio" name="format_1" class="checkbox" id="x21_9">
+                <label class="etykieta_checkbox" for="x21_9" id="img_21_9"><img src="img/21x9.png" class="img_checkbox" alt="monitor_21:9"></label><br/>
+                
+                Podaj przekątną (w calach):
+                <input type="number" name="screen_size" class="screen_size" id="screen1_size">
+            </form>
+        </div>
+        
+        <div class="form_screen">
+            Monitor #2<br/>
+            <form name="screen_2">
+                Wybierz proporcje:<br/>
+                
+                <input type="radio" name="format_2" class="checkbox" id="x16_9_2">
+                <label class="etykieta_checkbox" for="x16_9_2" id="img_16_9_2"><img src="img/16x9.png" class="img_checkbox" alt="monitor_16:9"></label>
+                
+                <input type="radio" name="format_2" class="checkbox" id="x4_3_2">
+                <label class="etykieta_checkbox" for="x4_3_2" id="img_4_3_2"><img src="img/4x3.png" class="img_checkbox" alt="monitor_4:3"></label>
+                
+                <input type="radio" name="format_2" class="checkbox" id="x21_9_2">
+                <label class="etykieta_checkbox" for="x21_9_2" id="img_21_9_2"><img src="img/21x9.png" class="img_checkbox" alt="monitor_21:9"></label><br/>
+                
+                Podaj przekątną (w calach):
+                <input type="number" name="screen_size" class="screen_size" id="screen2_size">
+            </form>
+        </div><br/>
+        
+        <input type="submit" id="porownaj" value="PORÓWNAJ" onsubmit="porownaj()">
+        
+    </section>
+    
+    <section id="comparison"></section>
+    
+    <footer>
+        Created by Grzegorz Musialik - <a href="mailto:grzegorz.musialik@o2.pl" id="mailto">grzegorz.musialik@o2.pl</a> 
+        <a href="https://www.facebook.com/messages/skrzatjedyny" target="_blank" style="display: inline-block;" class="link-fb">
+				<i class="icon-facebook"></i>
+        </a> 
+        | &copy; 2016  - ALL RIGHTS RESERVED
+    </footer>
+    
+        
+</body>
+</html>
