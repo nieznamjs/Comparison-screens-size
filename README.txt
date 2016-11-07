@@ -1,1 +1,1 @@
-Website avaiable on http://porownaj-monitory.pl
+Website avaiable on http://porownaj-monitory.pl or https://skrzatjedyny.github.io/Comparison-screens-size/.
